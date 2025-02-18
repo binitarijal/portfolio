@@ -8,8 +8,9 @@ a{
     color: var(--lightColor);
 }
 :root{
-    --primaryColor:#6e64c6;
-    --lightColor:rgb(241, 217, 85);
+    --primaryColor:hwb(246 29% 29%);
+    --lightprimaryColor:hwb(246 46% 15%);
+    --lightColor:rgb(231, 202, 41);
     --darkColour:rgb(226, 198, 40);
 }
 nav{
@@ -105,4 +106,53 @@ nav h1 span{
 .hero .right img{
     height: 20rem;
     width: 22rem;
-    border-radius: 50% 20% / 10% 40%;}
+    border-radius: 50% 20% / 10% 40%;
+}
+
+.services{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    column-gap: 1rem;
+    padding-left:1rem;
+    color: white;
+    padding-top:2rem ;
+}
+.services div{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(151, 62, 62);
+    line-height: 1.5rem;
+    background-color: hwb(240 39% 26%);
+    border-radius: 25% 10%;
+
+}
+.services div img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 60%;
+}
+
+.services div h3{
+    color: var(--lightColor);
+}
+
+.services div p{
+    font-size: 1remrem;
+    padding: 0 2rem;
+}
+
+.outersideservice{
+    color:var(--lightColor);
+    text-align: center;
+    font-size: 2rem;
+    margin: 2.6rem;
+    text-decoration: underline;
+}
+.services div:hover{
+    cursor: pointer;
+    background-color: var(--lightColor);
+}
