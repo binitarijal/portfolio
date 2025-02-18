@@ -154,5 +154,5 @@ nav h1 span{
 }
 .services div:hover{
     cursor: pointer;
-    background-color: var(--lightColor);
+    background-color: var(--primaryColor);
 }
